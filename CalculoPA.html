@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body background="https://i.pinimg.com/originals/21/66/7a/21667aebe75aa6ac5472846d6860eca1.jpg"
+    style="background-size: 49%;">
+    <center>
+        <button onclick="calcAn()">cálculo do An</button> <br>
+        <button onclick="calcA1()"> cálculo do A1</button><br>
+        <button onclick="calcR()"> cálculo do R</button><br>
+        <button onclick="calcN()"> cálculo do N</button><br><br>
+        <input type="date"> <br>
+        <input type="color"><br>
+        <input type="mail" placeholder="Digite seu email"><br>
+        <input type="password" placeholder="Digite sua senha"><br>
+        <input type="texte" placeholder="seu nome"><br>
+        <input type="tel" placeholder="Digite seu telefone"><br>
+        <input type="number" placeholder="Digite sua idade"><br>
+        <a href="https://youtu.be/XAdwgCDMLLw">clique aqui!</a>
+    
+    </center>
+</body>
+
+</html>
+<script>
+    function calcAn() {
+        var a1 = Number(prompt("digite o valor de a1"));
+        var n = Number(prompt("digite o valor de n"));
+        var r = Number(prompt("digite o valor de r"));
+        var an = a1 + (n - 1) * r;
+        alert(an);
+    }
+    function calcA1() {
+        var an = Number(prompt("digite o valor de an"));
+        var n = Number(prompt("digite o valor de n"));
+        var r = Number(prompt("digite o valor de r"));
+        var a1 = an - (n - 1) * r;
+        alert(a1);
+    }
+    function calcN() {
+        var an = Number(prompt("digite o valor de an"));
+        var r = Number(prompt("digite o valor de n"));
+        var a1 = Number(prompt("digite o valor de r"));
+        var n = 1 + ((an - a1) / r);
+        alert(n);
+    }
+    function calcR() {
+        var an = Number(prompt("digite o valor de an"));
+        var n = Number(prompt("digite o valor de n"));
+        var a1 = Number(prompt("digite o valor de r"));
+        var r = (an - a1) / (n - 1);
+        alert(r);
+    }
+</script>
