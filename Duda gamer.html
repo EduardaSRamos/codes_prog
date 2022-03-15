@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body background="https://noticiasdatv.uol.com.br/media/uploads/artigos/bbb20-manu-gavassi-assiste-barraco.jpg"
+    <button onclick="butão()">sarra no menor</button>
+    <br><br>
+    <button onclick="calculaIdade()">Quantos anos eu terei no final de 2022?</button>
+</body>
+
+</html>
+<script>
+    function butão() {
+        alert("Parabéns, você aprendeu a clicar em um butão")
+        var a = Number(prompt("insira o a"))
+        var b = Number(prompt("insira o b"))
+        var c = Number(prompt("insira o c"))
+        var delta = (b * b - (4 * a * c))
+        var x1 = (-b + Math.sqrt(delta)) / 2 * a
+        var x2 = (-b - Math.sqrt(delta)) / 2 * a
+        var mensagem = " o resultado do x1 é: " + x1 + ", o resultado de x2 é: " + x2;
+        alert(mensagem)
+    }
+    function calculaIdade() {
+        var anoNasc = Number(prompt("Digite ano que você nasceu"));
+        var idade = 2022 - anoNasc;
+        msg +=("no final de 2022 você terá " + idade + " anos.\n");
+        if (idade < 18) {
+            msg+=("Portanto, é menor de idade!\n");
+        }
+        else {
+            msg+=("Portanto, é maior de idade!");
+        }
+        if (idade % 2 == 0) {
+            msg+=("sua idade é par")
+        }
+        else {
+            msg+=("sua idade é ímpar")
+        }
+        alert(msg)
+    }
+</script>
